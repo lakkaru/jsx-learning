@@ -11,13 +11,13 @@ function getResult(marks) {
   }
 }
 
-const myFunc =function(){
-    return 0;
-}
+const myFunc = function () {
+  return 0;
+};
 
 const studentComponent = studentsArray.map((val, key) => {
   return (
-    <tr id={key}>
+    <tr key ={key}>
       <td>{val.name}</td>
       <td>{val.regNo}</td>
       <td>{val.email}</td>
@@ -32,7 +32,7 @@ const student = (
     <table>
       <thead style={{ fontWeight: "bold" }}>
         <tr>
-          <td>Name</td>
+          <td key = "ee">Name</td>
           <td>Reg No</td>
           <td>Email</td>
           <td>Marks</td>
